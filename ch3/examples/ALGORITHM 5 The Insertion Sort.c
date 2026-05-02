@@ -1,7 +1,7 @@
 #include <stdio.h>
  void insertionsort (double a[],int c){// 输入数组 和 元素总数
-    
-    for (int i = 1; i < c; i++)// 第2到最后一位的元素循环 
+
+    for (int i = 1; i < c; i++)// 第2到最后一位的元素循环
     {
         int j = 0;
         while (a[i] > a[j])//第i+1个元素与第1到第j+1 （1=<j+1<=i+1) 个元素进行比较 ，如果第i+1个元素不大于第j+1 （1=<j+1<=i+1) 个元素，则输出j值
@@ -27,7 +27,7 @@
         scanf("%lf",&f[k]);
         k++;
     } while (getchar() != '\n');
-   
+
     insertionsort(f,k);
 
     for (int i = 0; i < k ; i++)
